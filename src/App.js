@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Timetable from './components/Timetable';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Hello!
       </header>
+      <Timetable stopId="HSL:1030701" date="20210612"/>
+      <Timetable stopId="HSL:1030701" date="20210615"/>
     </div>
   );
 }
